@@ -1,0 +1,13 @@
+<%= form_for Article.new, remote: true do |f| %>
+  <div class="fields">
+    <%= f.label :title %><br/>
+    <%= f.text_field :title %>
+  </div>
+  <div class="fields">
+    <%= f.label :body %><br/>
+    <%= f.text_field :body %>
+  </div>
+  <div class="controls">
+    <%= f.submit "Create" %>
+  </div>
+<% end %>

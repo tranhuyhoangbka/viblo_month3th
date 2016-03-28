@@ -1,0 +1,12 @@
+<h1>New Article</h1>
+<%= render "form" %>
+<h1>All Article</h1>
+<ul class="articles">
+  <% @articles.each do |article| %>
+    <li class="article">
+      <p><%= link_to article.title, "#" %></p>
+      <p><%= article.body %></p>
+      <hr>
+    </li>
+  <% end %>
+</ul>
